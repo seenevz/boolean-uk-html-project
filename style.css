@@ -157,8 +157,51 @@ body.modal-on .modal {
 
 .modal > div {
   background: white;
+  opacity: 0.95;
   height: 5rem;
   font-size: 20px;
+  display: grid;
+  height: 80vh;
+  width: 70vw;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.dismiss {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: 10%;
+  right: 85%;
+}
+
+.modal > div input {
+  margin-left: 5px;
+}
+
+.modal > div label {
+  font-size: 1.1rem;
+}
+
+.modal > div .submit {
+  display: block;
+  width: 50%;
+  place-self: center;
+}
+
+.modal > div form {
+  display: grid;
+  place-content: center;
+}
+
+.modal > div p {
+  font-size: 1rem;
 }
 
 /* Headings */
